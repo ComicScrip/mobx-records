@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pinqy520/mobx-persist.git"
+    "url": "git+https://github.com/ComicScrip/mobx-records.git"
   },
   "keywords": [
     "mobx",
