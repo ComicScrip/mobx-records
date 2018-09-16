@@ -1,4 +1,5 @@
 ![Line coverage percent](https://cdn.rawgit.com/ComicScrip/mobx-records/e459ceab/tests/coverage/badge-lines.svg)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 ### [WIP] 
 Nothing to see here yet ;)

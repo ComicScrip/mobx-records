@@ -1,10 +1,10 @@
-import {computed} from 'mobx'
-import {Collection} from './Collection'
-import {uniqueId, keys, forEach} from 'lodash'
-import {OptimisticPrimaryKey} from './types'
+import { computed } from "mobx"
+import { Collection } from "./Collection"
+import { uniqueId, keys, forEach } from "lodash"
+import { OptimisticPrimaryKey } from "./types"
 
 export class Record {
-  public optimisticPrimaryKey: OptimisticPrimaryKey = uniqueId('i_')
+  public optimisticPrimaryKey: OptimisticPrimaryKey = uniqueId("i_")
   public collection: Collection<Record> | null = null
 
   public get attributesNames(): string[] {
@@ -12,9 +12,10 @@ export class Record {
     return c._attributes || []
   }
 
-  @computed public get attributes(): object {
+  @computed
+  public get attributes(): object {
     const attributesObject = {}
-    forEach(this.attributesNames, (a:string) => {
+    forEach(this.attributesNames, (a: string) => {
       attributesObject[a] = this[a]
     })
     return attributesObject
