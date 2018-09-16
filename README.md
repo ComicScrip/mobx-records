@@ -1,5 +1,4 @@
-![Line coverage percent](https://raw.githubusercontent.com/ComicScrip/mobx-records/master/tests/coverage/badge-lines.svg)
-
+![Line coverage percent](https://cdn.rawgit.com/ComicScrip/mobx-records/e459ceab/tests/coverage/badge-lines.svg)
 
 ### [WIP] 
 Nothing to see here yet ;)
