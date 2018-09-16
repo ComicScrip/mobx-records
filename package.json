@@ -1,0 +1,73 @@
+{
+  "name": "mobx-records",
+  "version": "0.1.0",
+  "description": "Observable business records",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build-lib": "shx rm -rf lib && tsc",
+    "test": "cd tests && jest && jest-coverage-badges"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinqy520/mobx-persist.git"
+  },
+  "keywords": [
+    "mobx",
+    "store",
+    "records",
+    "mobx-records",
+    "rest",
+    "offline"
+  ],
+  "author": "Pierre Genthon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ComicScrip/mobx-records/issues"
+  },
+  "homepage": "https://github.com/ComicScrip/mobx-records",
+  "files": [
+    "lib"
+  ],
+  "jest": {
+    "testURL": "http://localhost/",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "/tests/.*\\.spec\\.(ts|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "json-summary",
+      "lcov",
+      "text-summary",
+      "html"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ],
+    "coverageDirectory": "tests/coverage"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "lodash": "^4.17.10",
+    "mobx": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/lodash": "^4.14.116",
+    "jest": "23.4.2",
+    "jest-coverage-badges": "^1.0.0",
+    "shx": "^0.3.2",
+    "ts-jest": "^23.1.4",
+    "typescript": "^3.0.3"
+  }
+}
